@@ -11,8 +11,8 @@ public interface DAOUsuario {
     //Devuelve la lista con todos los users + el nuevo  POST
     List<Usuario> insertarUsuario(Usuario u);
     //Put
-    Usuario actualizarUsuario (String nombre, List<Pelicula> listaPeliculas);
+    Usuario actualizarUsuario (String nombre,String nombreNuevo, List<Pelicula> listaPeliculas);
 
-    Usuario eliminarUser(String nombre);
+    List<Usuario> eliminarUser(String nombre);
 
 }

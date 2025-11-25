@@ -12,7 +12,7 @@ public interface DAOPelicula {
 
     List<Pelicula> actualizarPelicula(String nombrePelicula, Pelicula nuevaPelicula);
 
-    List<Pelicula> eliminarPelicula(Pelicula p);
+    void eliminarPelicula(String nombreP);
 
 
 }

@@ -22,7 +22,7 @@ public class DAOFactory {
         return daoFactory;
     }
 
-    public DAOPelicula getDaoPartida(){
+    public DAOPelicula getDaoPelicula(){
         if (this.daoPelicula == null){
             daoPelicula = new DAOPeliculaSQL();
         }
