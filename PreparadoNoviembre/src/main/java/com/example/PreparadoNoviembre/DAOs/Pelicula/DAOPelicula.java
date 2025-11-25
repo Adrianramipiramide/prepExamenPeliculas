@@ -14,5 +14,4 @@ public interface DAOPelicula {
 
     void eliminarPelicula(String nombreP);
 
-
 }

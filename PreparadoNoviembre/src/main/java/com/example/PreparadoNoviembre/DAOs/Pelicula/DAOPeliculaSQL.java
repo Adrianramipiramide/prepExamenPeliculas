@@ -63,7 +63,6 @@ public class DAOPeliculaSQL implements DAOPelicula{
             e.printStackTrace();
         }
 
-
         return getListaPeliculas(nuevaPelicula.getNombreUsuario());
     }
 

@@ -45,7 +45,7 @@ public class DAOUsuarioSQL implements DAOUsuario{
     }
 
     @Override
-    public Usuario actualizarUsuario(String nombre, String nombreNuevo,List<Pelicula> listaPeliculas) {
+    public Usuario actualizarUsuario(String nombre, String nombreNuevo) {
         String consulta = "update Usuario set nombre = ? where nombre = ?";
 
         try{
