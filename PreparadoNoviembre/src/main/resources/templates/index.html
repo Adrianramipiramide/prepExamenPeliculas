@@ -10,14 +10,18 @@
     <h2>Pagina de Peliculas</h2>
     <table>
         <tr>
-            <th>Titulo</th>
-            <th>Duracion</th>
-            <th>Autor</th>
+            <th>Nombre</th>
+            <th>Edad</th>
         </tr>
-        <tr th:each="peli:${peliculas}">
-            <td th:text="${peli.nombre}"></td>
-            <td th:text="${peli.duracion}"></td>
-            <td th:text="${peli.nombreUsuario}"></td>
+        <tr th:each="user:${usuarios}">
+            <td th:text="${user.nombre}"></td>
+            <td th:text="${user.edad}"></td>
+            <td>
+
+                <form method="get" th:action="'/pelisUser/'+${user.nombre}">
+                    <button type="submit">Ver</button>
+                </form>
+            </td>
         </tr>
     </table>
 </body>

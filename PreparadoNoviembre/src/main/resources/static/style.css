@@ -1,3 +1,7 @@
 body{
 background-color:aquamarine;
 }
+
+table{
+border: solid black 3px;
+}
