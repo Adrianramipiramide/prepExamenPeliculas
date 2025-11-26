@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Usuario</title>
+</head>
+<body>
+    <form method="post" action="/eliminarUser">
+        <select name="nombre" value="nombre">
+            <option>Por defecto</option>
+            <option th:each="user:${usuarios}" th:text="${user.nombre}" ></option>
+        </select>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

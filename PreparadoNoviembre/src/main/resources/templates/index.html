@@ -17,7 +17,6 @@
             <td th:text="${user.nombre}"></td>
             <td th:text="${user.edad}"></td>
             <td>
-
                 <form method="get" th:action="'/pelisUser/'+${user.nombre}">
                     <button type="submit">Ver</button>
                 </form>
