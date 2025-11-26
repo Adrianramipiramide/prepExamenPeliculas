@@ -1,7 +1,17 @@
 body{
 background-color:aquamarine;
+margin:0;
 }
 
 table{
 border: solid black 3px;
+}
+
+nav{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:2vw;
+width: 100vw;
+height: 20vh;
 }

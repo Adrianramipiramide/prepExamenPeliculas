@@ -5,16 +5,32 @@
     <title>Peliculas</title>
 </head>
 <body>
+<div th:insert="frag/nav"></div>
     <table>
         <tr>
             <th>Titulo</th>
             <th>Duracion</th>
             <th>Director</th>
+            <th>--------</th>
         </tr>
         <tr th:each="pelicula:${peliculas}">
             <td th:text="${pelicula.nombre}"></td>
             <td th:text="${pelicula.duracion}"></td>
             <td th:text="${pelicula.nombreUsuario}"></td>
+            <td>
+                <form method="post" action="/eliminarPelicula">
+                     <input type="hidden"  th:value="${pelicula.nombre}" value="nombre" name="nombre">
+                    <input type="hidden" th:value="${pelicula.nombreUsuario}" value="nombreUsuario" name="nombreUsuario">
+                <button>ELiminar</button>
+               </form>
+            </td>
+            <td>
+                <form method="get" action="/windowActualizarPelicula">
+                    <input type="hidden"  th:value="${pelicula.nombre}" value="nombre" name="nombre">
+                    <input type="hidden" th:value="${pelicula.nombreUsuario}" value="nombreUsuario" name="nombreUsuario">
+                    <button>Actualizar</button>
+                </form>
+            </td>
         </tr>
     </table>
 

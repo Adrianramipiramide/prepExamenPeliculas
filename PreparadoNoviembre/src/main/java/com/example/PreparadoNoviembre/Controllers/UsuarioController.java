@@ -14,10 +14,10 @@ public class UsuarioController {
         model.addAttribute("usuarios", DAOFactory.getInstance().getDaoUsuario().getUsers());
         return "index";
     }
-//sin terminar
+
     @GetMapping("/windowInsertarUser")
-    String insertar(Model model){
-        model.addAttribute("usuarios",DAOFactory.getInstance().getDaoUsuario().getUsers());
+    String insertar(){
+
         return "insertarUser";
     }
 

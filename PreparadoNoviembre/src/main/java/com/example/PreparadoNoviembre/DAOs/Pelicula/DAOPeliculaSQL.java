@@ -14,6 +14,8 @@ import java.util.List;
 public class DAOPeliculaSQL implements DAOPelicula{
 
 
+
+
     @Override
     public List<Pelicula> getListaPeliculas(String nombreUsuario) {
         List<Pelicula> listaPeliculas = new ArrayList<>();

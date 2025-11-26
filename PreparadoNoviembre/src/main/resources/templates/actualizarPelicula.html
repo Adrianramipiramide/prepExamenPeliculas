@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Pelicula</title>
+</head>
+<body>
+    <form method="post" action="/actualizarPelicula">
+        <p th:text="${nombre}" ></p>
+        <p th:text="${nombreUsuario}" ></p>
+        <input type="hidden" th:value="${nombre}" name="nombre">
+        <input type="hidden" th:value="${nombreUsuario}" name="nombreUsuario">
+        <input placeholder="titulo" name="nuevaPeli">
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
